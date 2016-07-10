@@ -14,7 +14,9 @@ This will install pupcon into ~/.pupcon
 OR
 
 `wget https://raw.githubusercontent.com/ac0ra/puppet-conf-tools/master/src/scripts/pupcon.install.sh`
+
 `chmod +x pupcon.install.sh`
+
 `./pupcon.install.sh -d "$INSTALL DIRECTORY"`
 
 
