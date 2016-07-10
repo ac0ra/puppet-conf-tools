@@ -58,7 +58,7 @@ buildpupcon() {
 	inform git clone https://github.com/ac0ra/puppet-res.git $installdir/configs/puppet-res
 	inform git clone https://github.com/ac0ra/puppet-res-priv.git $installdir/configs/puppet-private-res
 	printf "Preparing Pupcon\n"
-	try cp $installdir/share/pupcon-src/build/working/bin/* $installdir/bin/
+	try cp $installdir/share/pupcon-src/src/scripts/* $installdir/bin/
 	try virtualenv --no-site-packages --distribute $installdir/venv
 	try source $installdir/venv/bin/activate
 	try pip install -r $installdir/share/pupcon-src/requirements.txt

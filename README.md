@@ -5,13 +5,17 @@
 
 ## Installation
 
-1. Install python components
+1. Install pupcon environment.
 
-`virtualenv --no-site-packages --distribute venv`
+This will install pupcon into ~/.pupcon
 
-`source venv/bin/activate`
+`curl https://raw.githubusercontent.com/ac0ra/puppet-conf-tools/master/src/scripts/pupcon.install.sh | bash`
 
-`pip install -r requirements.txt`
+OR
 
+`wget https://raw.githubusercontent.com/ac0ra/puppet-conf-tools/master/src/scripts/pupcon.install.sh
+
+chmod +x pupcon.install.sh
+./pupcon.install.sh -d "$INSTALL DIRECTORY"`
 
 
