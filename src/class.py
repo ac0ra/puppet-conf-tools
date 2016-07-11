@@ -19,10 +19,10 @@ class pupclass(object):
 
 
     def add(self):
-        if self.type = "yaml":
+        if self.type == "yaml":
             with open(self.file, 'w') as outfile:
                 yaml.dump(json.loads(self.json), outfile, default_flow_style=True)
-        elif self.type = "json":
+        elif self.type == "json":
             with open(self.file, 'w') as outfile:
                 json.dump(self.json, outfile, indent=4)
             
@@ -30,7 +30,7 @@ class pupclass(object):
 
 
     def delete(self):
-
+        os.remove(self.file)
 
     def debug(self):
         print(self.name)
